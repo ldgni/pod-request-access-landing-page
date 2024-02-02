@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pod Request Access Landing Page" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Pod Request Access Landing Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <a href="#" class="main__logo">
+          <img src="assets/images/logo.svg" alt="pod logo" />
+        </a>
+        <div class="container-content">
+          <h1 class="main__title">
+            <span class="title__highlight">Publish your podcasts</span>
+            everywhere.
+          </h1>
+          <p class="main__text">
+            Upload your audio to Pod with a single click. We’ll then distribute
+            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
+            Casts and more!
+          </p>
+          <div class="flex-reverse">
+            <form id="request-form" class="main__form" novalidate>
+              <input
+                type="email"
+                name="email"
+                id="email-input"
+                autocomplete="off"
+                placeholder="Email address"
+                class="form__input"
+              />
+              <button type="submit" id="submit-btn" class="form__btn">
+                Request Access
+              </button>
+            </form>
+            <div class="main__platforms">
+              <img
+                src="assets/images/spotify.svg"
+                alt="Spotify"
+                class="platforms__icon"
+              />
+              <img
+                src="assets/images/apple-podcast.svg"
+                alt="Apple Podcast"
+                class="platforms__icon"
+              />
+              <img
+                src="assets/images/google-podcasts.svg"
+                alt="Google Podcasts"
+                class="platforms__icon"
+              />
+              <img
+                src="assets/images/pocket-casts.svg"
+                alt="Pocket Casts"
+                class="platforms__icon"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

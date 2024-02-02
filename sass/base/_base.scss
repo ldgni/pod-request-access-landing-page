@@ -1,0 +1,55 @@
+@use "../utils/" as *;
+
+body {
+  background-color: $color-secondary;
+  color: $color-tertiary;
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+
+  background-image: url("./assets/images/image-host-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  @include md-size {
+    background-image: url("./assets/images/image-host-tablet.jpg"),
+      url("./assets/images/bg-pattern-dots.svg");
+    background-position: top right, bottom left 2.5rem;
+    background-size: initial;
+    background-blend-mode: initial;
+  }
+  @include lg-size {
+    background-image: url("./assets/images/bg-pattern-dots.svg"),
+      url("./assets/images/image-host-desktop.jpg");
+    background-position: bottom 6.75rem right, center right;
+  }
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.container-content {
+  @include md-size {
+    background-color: $color-secondary;
+    padding-top: 5.81rem;
+    max-width: 40rem;
+  }
+  @include lg-size {
+    padding-top: 5.5rem;
+    max-width: 45rem;
+  }
+}
+
+.flex-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3rem;
+  @include md-size {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}

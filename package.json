@@ -1,0 +1,10 @@
+{
+  "name": "pod-request-access-landing-page",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}
